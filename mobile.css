@@ -1,0 +1,78 @@
+.mobile-nav {
+	width: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+	background: #b70004;
+	box-shadow: 0px 1px 3px #333;
+	-webkit-transition: top 0.2s ease-out;
+	-moz-transition: top 0.2s ease-out;
+	-ms-transition: top 0.2s ease-out;
+	-o-transition: top 0.2s ease-out;
+	transition: top 0.2s ease-out;
+}
+.mobile-nav.closed {
+	top: -29em;	/* for 6 (single line) menu items - recalculate if different */
+	margin-top: 3px;
+}
+.mobile-nav a, .mobile-nav a:hover, .mobile-nav a:active, .mobile-nav a:focus {
+	text-decoration: none;
+	outline: 0;
+}
+.mobile-nav .toggle-button {
+	display: block;
+	position: absolute;
+	bottom: -2em;
+	right: 1.5em;
+	line-height: 2em;
+	font-size: 2em;
+	padding: 0 1em;
+	color: #fff;
+	background: #b70004;
+	border-radius: 0px 0px 6px 6px;
+	box-shadow: 0px 2px 2px rgba(30,30,30,0.3);
+	z-index: 5;
+}
+.mobile-nav .toggle-button:before, .toggle-button:after {
+	content: "";
+	width: 1em;
+	height: 1em;
+	position: absolute;
+	top: 0;
+	left: -1em;
+	background: url(toggle-button-t-l.png) no-repeat right top;
+}
+.mobile-nav .toggle-button:after  {
+	right: -1em;
+	left: auto;
+	background: url(toggle-button-t-r.png) no-repeat left top;
+}
+.mobile-nav ul {
+	margin: 0.5em;
+	padding: 0;
+	list-style: none;
+	font-size: 2em;
+}
+.mobile-nav li {
+	margin-top: 0.3em;
+}
+.mobile-nav li:first-child {
+	margin-top: 0;
+}
+.mobile-nav li a {
+	display: block;
+	line-height: 2em;
+	text-align: center;
+	color: #fff;
+	text-shadow: 1px 1px 2px rgba(40,40,40,0.4);
+	background: rgb(130,3,4);
+	box-shadow: inset 0px -5px 20px rgba(80,3,4,0.2);
+}
+.mobile-nav li a:hover {
+	background-color: rgb(160,3,4);
+}
+.mobile-nav li a:active {
+	background-color: rgb(200,3,4);
+}
